@@ -6,6 +6,10 @@ class TreeNode{
     int data;
 
     List<TreeNode> children;
+
+    public TreeNode left;
+
+    public TreeNode right;
     TreeNode(int data){
         this.data = data;
         this.children = new ArrayList<>();

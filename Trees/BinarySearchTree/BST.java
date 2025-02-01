@@ -44,12 +44,12 @@ class BinarySearchTree {
             return search(root.right, data);
     }
 
-    private int min(TreeNode root){
-        if(root.left==null) return root.data;
+    private int min(TreeNode root) {
+        if (root.left == null)
+            return root.data;
         return min(root.left);
     }
-    
-
+  
     private TreeNode delete(TreeNode root, int data) {
         if (root == null)
             return root;
